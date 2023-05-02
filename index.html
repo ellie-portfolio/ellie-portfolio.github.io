@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid test</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Aldrich&family=Anton&family=Ballet&family=Bowlby+One&family=Changa+One:ital@0;1&family=Chango&family=Chela+One&family=EB+Garamond&family=PT+Sans:ital@1&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="grid">
+
+        <!-- ADD NEW VIDEOS HERE AND ALSO DOWN BELOW AROUND LINE 60 -->
+
+        <div class="video-container">
+            <div class="mini-modal">black midi - Sugar Tzu</div>
+            <video class="grid-item" src="vids/black midi - Sugar Tzu.mp4" alt="Video Thumbnail" muted loop></video>
+        </div>
+        <div class="video-container">
+            <div class="mini-modal">Bring Me The Horizon - sTraNgeRs</div>
+            <video class="grid-item" src="vids/Bring Me The Horizon - sTraNgeRs (Official Video).mp4" alt="Video Thumbnail" muted loop></video>
+        </div>
+        <div class="video-container">
+            <div class="mini-modal">Def Leppard - Kick</div>
+            <video class="grid-item" src="vids/Def Leppard - Kick.mp4" alt="Video Thumbnail" muted loop></video>
+        </div>
+        <div class="video-container">
+            <div class="mini-modal">Desta French - Bendecida</div>
+            <video id="bendecida" class="grid-item" src="vids/Desta French - Bendecida (Official Video).mp4" alt="Video Thumbnail" muted loop></video>
+        </div>
+        <div class="video-container">
+            <div class="mini-modal">kfc_'the_first_bite'</div>
+            <video class="grid-item" src="vids/kfc_'the_first_bite'.mp4" alt="Video Thumbnail" muted loop></video>
+        </div>
+        <div class="video-container">
+            <div class="mini-modal">Lava La Rue - Hi-Fidelity Ft. Biig Piig</div>
+            <video class="grid-item" src="vids/Lava La Rue - Hi-Fidelity Ft. Biig Piig.mp4" alt="Video Thumbnail" muted loop></video>
+        </div>
+        <div class="video-container">
+            <div class="mini-modal">Make the Next Culinary Empire ｜ Everything to Sell Anything ｜ Squarespace</div>
+            <video class="grid-item" src="vids/Make the Next Culinary Empire ｜ Everything to Sell Anything ｜ Squarespace.mp4" alt="Video Thumbnail" muted loop></video>
+        </div>
+        <div class="video-container">
+            <div class="mini-modal">Make the Next Wellness Empire ｜ Everything to Sell Anything ｜ Squarespace</div>
+            <video class="grid-item" src="vids/Make the Next Wellness Empire ｜ Everything to Sell Anything ｜ Squarespace.mp4" alt="Video Thumbnail" muted loop></video>
+        </div>
+        <div class="video-container">
+            <div class="mini-modal">Noel Gallagher s High Flying Birds - Easy Now</div>
+            <video class="grid-item" src="vids/Noel Gallagher s High Flying Birds - Easy Now.mp4" alt="Video Thumbnail" muted loop></video>
+        </div>
+        <div class="video-container">
+            <div class="mini-modal">Priya Ragu - Illuminous</div>
+            <video class="grid-item" src="vids/Priya Ragu - Illuminous.mp4" alt="Video Thumbnail" muted loop></video>
+        </div>
+        <div class="video-container">
+            <div class="mini-modal">Samsung “Feel more. Move more”</div>
+            <video class="grid-item" src="vids/Samsung “Feel more. Move more”.mp4" alt="Video Thumbnail" muted loop></video>
+        </div>
+        <div class="video-container">
+            <div class="mini-modal">squarespace (online-video-cutter.com)</div>
+            <video class="grid-item" src="vids/squarespace (online-video-cutter.com).mp4" alt="Video Thumbnail" muted loop></video>
+        </div>
+        <div class="video-container">
+            <div class="mini-modal">Sudan Archives - NBPQ (Topless) [Official Video]</div>
+            <video class="grid-item" src="vids/Sudan Archives - NBPQ (Topless) [Official Video].mp4" alt="Video Thumbnail" muted loop></video>
+        </div>
+        <div class="video-container">
+            <div class="mini-modal">World of Wish Get Ready For Real Smiles</div>
+            <video class="grid-item" src="vids/World of Wish Get Ready For Real Smiles.mp4" alt="Video Thumbnail" muted loop></video>
+        </div>
+        <div class="video-container">
+            <div class="mini-modal">World of Wish Get Lost In The Shop</div>
+            <video class="grid-item" src="vids/World of Wish Get Lost In The Shop.mp4" alt="Video Thumbnail" muted loop></video>
+        </div>
+        
+    </div>
+
+    <!-- MODAL POP-UP -->
+
+    <div class="modal">
+        <div class="btn close">
+            <svg width="55" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width=".4"
+                    d="M17.25 6.75L6.75 17.25" />
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width=".4"
+                    d="M6.75 6.75L17.25 17.25" />
+            </svg>
+        </div>
+
+        <div class="modal-content">
+
+            <div class="carousel">
+                <div class="btn prev">
+                    <svg width="90" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"
+                            d="M13.25 8.75L9.75 12L13.25 15.25" />
+                    </svg>
+                </div>
+
+                <!-- ...ADD NEW VIDEOS HERE AS WELL -->
+
+                <div class="slides">
+                    <video src="vids/vid1.mp4" controls class="slide"></video>
+                    <video src="vids/vid2.mp4" controls class="slide"></video>
+                    <video src="vids/vid3.mp4" controls class="slide"></video>
+                    <video src="vids/vid4.mp4" controls class="slide"></video>
+                    <video src="vids/vid5.mp4" controls class="slide"></video>
+                    <div class="video-sized-spacer"></div>
+                    <div class="captions-container">
+                        <div class="caption">text</div>
+                    </div>
+
+                    <div class="btn next">
+                        <svg width="90" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"
+                                d="M10.75 8.75L14.25 12L10.75 15.25" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+
+</html>
