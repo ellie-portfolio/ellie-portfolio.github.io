@@ -51,7 +51,6 @@ miniModal.forEach((element, index) => {
         slides[index].play();
         curSlide = index
         caption.innerHTML = miniModal[curSlide].innerHTML;
-
     });
 });
 
