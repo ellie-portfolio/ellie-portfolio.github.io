@@ -11,16 +11,20 @@ body {
 
 @font-face {
     font-family: 'Lulo';
-    src: url('fonts/LuloCleanOneBold.otf') format('opentype'),
-    url('fonts/LuloCleanOneBold.woff') format('woff'),
-    ;
-
+    src: url('https://github.com/ellie-portfolio/ellie-portfolio.github.io/raw/main/fonts/LuloCleanOneBold.otf') format('opentype');
 }
+
+@font-face {
+    font-family: 'World Discovery';
+    src: url('fonts/worlddiscovery.otf') format('opentype');
+}
+
+
 
 #header {
     height: 250px;
     max-width: 100vw;
-    font-family: 'Lulo', sans-serif;
+    font-family: 'Lulo';
 }
 
 @media (min-width: 701px) {
