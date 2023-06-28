@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'EB Garamond', serif;
+}
+
+/* Header */
+
+@font-face {
+    font-family: 'Lulo';
+    src: url('fonts/LuloCleanOneBold.otf') format('opentype'),
+    url('fonts/LuloCleanOneBold.woff') format('woff'),
+    ;
+
+}
+
+#header {
+    height: 250px;
+    max-width: 100vw;
+    font-family: 'Lulo', sans-serif;
+}
+
+@media (min-width: 701px) {
+    #header {
+        height: 405px;
+        padding-left: 30px;
+
+    }
+}
+
+#header img {
+    max-width: 80vw;
+}
+
+@media (min-width: 701px) {
+    #header img {
+        height: 313px;
+    }
+}
+
+/* GRID */
+
+#grid {
+    display: grid;
+}
+
+@media (min-width: 701px) {
+    #grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1200px) {
+    #grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.grid-item {
+    position: relative;
+    height: 0;
+    padding-bottom: 56.25%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.grid-item video {
+    position: absolute;
+    width: 100%
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: opacity 0.3s ease-in-out;
+}
+
+@media (min-width: 700px) {
+    .overlay {
+        opacity: 0;
+    }
+}
+
+.overlay:hover {
+    opacity: 1;
+}
