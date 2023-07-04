@@ -11,8 +11,8 @@ body {
 
 @font-face {
     font-family: 'lulo_cleanone_bold';
-    src: url('fontspring-demo-lulocleanonebold.woff2') format('woff2'),
-         url('fontspring-demo-lulocleanonebold.woff') format('woff');
+    src: url('fonts/fontspring-demo-lulocleanonebold.woff2') format('woff2'),
+         url('fonts/fontspring-demo-lulocleanonebold.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
