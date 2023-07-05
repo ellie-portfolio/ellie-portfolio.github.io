@@ -16,4 +16,3 @@ const titles = [
     `World of Wish - Get Lost In The Shop`,
     `World of Wish - Get Ready for Real Smiles`,
 ];
-

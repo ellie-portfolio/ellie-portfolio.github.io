@@ -33,6 +33,7 @@
 button {
     all: unset;
     padding: 10px;
+    cursor: pointer;
 }
 
 #close {
