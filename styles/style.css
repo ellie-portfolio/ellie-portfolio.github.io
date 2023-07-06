@@ -11,38 +11,57 @@ body {
 
 @font-face {
     font-family: 'lulo_cleanone_bold';
-    src: url('fontspring-demo-lulocleanonebold.woff2') format('woff2'),
-        url('fontspring-demo-lulocleanonebold.woff') format('woff');
-    font-weight: normal;
+    src: url('/fonts/fontspring-demo-lulocleanonebold.woff2') format('woff2'),
+        url('/fonts/fontspring-demo-lulocleanonebold.woff') format('woff');
     font-style: normal;
 }
 
 #header {
-    height: 250px;
+    height: 255px;
     max-width: 100vw;
     font-family: 'lulo_cleanone_bold';
+    letter-spacing: .5px;
 }
 
-h1 {
-    font-family: 'lulo_cleanone_bold';
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    gap: 80px;
+    font-size: 17.5px;
+    padding-left: 16px;
+    position: relative;
+    top:-11px;
+}
+
+#job-title {
+    font-size: 18.5px;
 }
 
 @media (min-width: 701px) {
     #header {
-        height: 405px;
-        padding-left: 30px;
+        height: 420px;
+        padding-left: 33px;
 
     }
 }
 
-#header img {
+#ellie-logo {
     max-width: 80vw;
 }
 
 @media (min-width: 701px) {
-    #header img {
+    #ellie-logo {
         height: 313px;
     }
+}
+
+#ig-icon {
+    position: relative;
+    top:-11px;
+    left: -33px;
+
 }
 
 /* GRID */
