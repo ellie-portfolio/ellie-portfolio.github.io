@@ -1,7 +1,11 @@
 const grid = document.querySelector(`#grid`);
+const grid2 = document.querySelector(`#grid2`);
 const gridItem = document.querySelector(`.grid-item`);
-const howManyVids = titles.length;
-console.log("There are " + howManyVids + " videos");
+const gridItem2 = document.querySelector(`.grid-item2`);
+const howManyVids = musicvids.length;
+const howManyVids2 = adverts.length;
+console.log("There are " + howManyVids + " musicvids");
+console.log("There are " + howManyVids2 + " adverts");
 
 // clone 1st grid-item node (with children) x howManyVids and append all clones to grid 
 
@@ -14,13 +18,29 @@ const gridVids = document.querySelectorAll(`#grid video`);
 const overlays = document.querySelectorAll(`.overlay`);
 const gridItems = document.querySelectorAll(`.grid-item`);
 
+for (i = 1; i < howManyVids2; i++) {
+    let clone2 = gridItem2.cloneNode(true);
+    grid2.appendChild(clone2);
+};
+
+const gridVids2 = document.querySelectorAll(`#grid2 video`);
+const overlays2 = document.querySelectorAll(`.overlay2`);
+const gridItems2 = document.querySelectorAll(`.grid-item2`);
+
 // Add source+poster to videos + title to overlays
 
 gridVids.forEach(addSrcAndTitle);
 function addSrcAndTitle(item, index) {
-    gridVids[index].src = "vids/" + titles[index] + ".mp4";
-    gridVids[index].poster = "poster/" + titles[index] + ".jpg";
-    overlays[index].innerHTML = titles[index];
+    gridVids[index].src = "vids/" + musicvids[index] + ".mp4";
+    gridVids[index].poster = "poster/" + musicvids[index] + ".jpg";
+    overlays[index].innerHTML = musicvids[index];
+};
+
+gridVids2.forEach(addSrcAndTitle2);
+function addSrcAndTitle2(item, index) {
+    gridVids2[index].src = "vids/" + adverts[index] + ".mp4";
+    gridVids2[index].poster = "poster/" + adverts[index] + ".jpg";
+    overlays2[index].innerHTML = adverts[index];
 };
 
 // Hover 
@@ -32,6 +52,16 @@ function playOnHover(item, index) {
     });
     item.addEventListener(`mouseout`, () => {
         gridVids[index].pause();
+    });
+};
+
+overlays2.forEach(playOnHover2);
+function playOnHover2(item, index) {
+    item.addEventListener(`mouseover`, () => {
+        gridVids2[index].play();
+    });
+    item.addEventListener(`mouseout`, () => {
+        gridVids2[index].pause();
     });
 };
 

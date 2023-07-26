@@ -15,7 +15,7 @@ const modalVids = document.querySelectorAll(`#screen video`);
 // Add source to videos
 modalVids.forEach(addSrc);
 function addSrc(item, index) {
-    modalVids[index].src = "vids/" + titles[index] + ".mp4";
+    modalVids[index].src = "vids/" + musicvids[index] + ".mp4";
 };
 
 // hide + pause all videos
@@ -46,7 +46,7 @@ function modalOnClick(item, index) {
         showVid(modalVids[index]);
         updateScreenSize();
         modalVids[index].play();
-        caption.innerHTML = titles[currentVid];
+        caption.innerHTML = musicvids[currentVid];
     });
 }
 
@@ -73,7 +73,7 @@ function prevFn() {
     showVid(modalVids[currentVid]);
     updateScreenSize();
     modalVids[currentVid].play();
-    caption.innerHTML = titles[currentVid];
+    caption.innerHTML = musicvids[currentVid];
 };
 
 next.addEventListener(`click`, nextFn);
@@ -86,7 +86,7 @@ function nextFn() {
     showVid(modalVids[currentVid]);
     updateScreenSize();
     modalVids[currentVid].play();
-    caption.innerHTML = titles[currentVid];
+    caption.innerHTML = musicvids[currentVid];
 };
 
 // match screen height to video height

@@ -14,21 +14,26 @@
         rel="stylesheet">
     <link rel="stylesheet" href="/styles/style.css">
     <link rel="stylesheet" href="/styles/modal.css">
+    <link rel="stylesheet" href="/styles/modal2.css">
 </head>
 
 <body>
 
     <div id="header">
         <img id="ellie-logo" src="img/ELLIEWALKERLOGO1.webp" alt="Ellie Walker Logo">
-        <ul id="nav">
-            <li id="job-title">COSTUME DESIGNER AND STYLIST</li>
-            <li>Stills</li>
-            <li>Moving Image</li>
-            <li>About</li>
-            <li>
-                <img id="ig-icon" height="42" width="42" src="img/ig-icon.webp" alt="Instagram Logo">
-            </li>
-        </ul>
+        <div id="nav">
+        <div id="costume">COSTUME DESIGNER AND STYLIST </div>
+            <div class="nav-item" id="stills"><a href="https://www.ellie-walker.com">Stills</a></div>
+            <div class="nav-item" id="moving">Moving Image </div>
+            <div class="nav-item" id="about"><a href="https://www.ellie-walker.com/about">About</a></div>
+            <div class="nav-item" id="ig"><a href="https://www.instagram.com/ellieslwalker">
+                <img id="ig-icon" height="42" width="42" src="img/ig-icon.webp" alt="Instagram Logo"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-title">
+        Music Videos
     </div>
 
     <div id="grid">
@@ -38,11 +43,21 @@
         </div>
     </div>
 
+    <div id="adverts" class="section-title">
+        Adverts
+    </div>
+
+    <div id="grid2">
+        <div class="grid-item2">
+            <video muted></video>
+            <div class="overlay2"></div>
+        </div>
+    </div>
+
     <div id="modal" class="hide">
         <button id="close">
             <img src="svgs/x.svg" alt="black cross" height="50">
         </button>
-
         <div id="carousel">
             <button id="prev">
                 <img src="svgs/prev.svg" alt="black cross" height="50">
@@ -57,15 +72,36 @@
             </button>
 
         </div>
-
         <div id="caption"></div>
+    </div>
+    
+    <div id="modal2" class="hide">
+        <button id="close2">
+            <img src="svgs/x.svg" alt="black cross" height="50">
+        </button>
+        <div id="carousel2">
+            <button id="prev2">
+                <img src="svgs/prev.svg" alt="black cross" height="50">
+            </button>
 
+            <div id="screen2">
+                <video controls></video>
+            </div>
+
+            <button id="next2">
+                <img src="svgs/next.svg" alt="black cross" height="50">
+            </button>
+
+        </div>
+        <div id="caption2"></div>
     </div>
 
 </body>
-<script src="scripts/titles.js"></script>
+<script src="scripts/musicvids.js"></script>
+<script src="scripts/adverts.js"></script>
 <script src="scripts/main.js"></script>
 <script src="scripts/modal.js"></script>
+<script src="scripts/modal2.js"></script>
 <script src="scripts/keyboard.js"></script>
 
 </html>
