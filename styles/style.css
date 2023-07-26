@@ -7,7 +7,85 @@ body {
     font-family: 'EB Garamond', serif;
 }
 
+.mobile-menu {
+    display: none;
+}
+
 /* Header */
+
+/* tablet breakpoint */
+
+@media (max-width: 1200px) {
+
+    .nav-item{
+        font-size: 14px;
+        text-align: center;
+    }
+
+    #costume{ 
+        font-size: 14px !important;
+        text-align: center;
+    }
+
+}
+
+/* mobile breakpoint */
+
+@media (max-width: 700px) and (min-width: 0px) {
+
+#header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto !important;
+}
+#nav {
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+    }
+#ellie-logo {
+    height: 20vh;
+    width: auto;
+}
+#costume {
+    font-size: 12px !important;
+    padding-top: 18px;
+}
+
+.nav-item {
+    font-size: 12px !important;
+    width: 25vw;
+    display: none;
+}
+
+#grid2{
+    margin-bottom: 0px !important;
+}
+
+.mobile-menu {
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 12px !important;
+    width: 100vw !important;
+}
+
+.section-title {
+
+    font-size: 12px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 12px !important;
+    margin-left: 0px !important;
+}
+
+}
 
 @font-face {
     font-family: 'lulo_cleanone_bold';
@@ -31,6 +109,31 @@ body {
 
     #ellie-logo {
         height: 313px;
+    }
+
+    #costume {
+        font-size: 18.5px;
+        text-align: center;
+    }
+    
+    #stills {
+        position: relative;
+        padding-left: 100px;
+    }
+    
+    #moving {
+        position: relative;
+        padding-left: 80px;
+        color: #4c3ccc;
+    }
+
+    #about {
+        position: relative;
+        padding-left: 80px;
+    }
+    #ig-icon {
+        position: relative;
+        padding-left: 45px;
     }
 }
 
@@ -62,33 +165,8 @@ a {
     text-decoration: inherit;
 }
 
-#costume {
-    font-size: 18.5px;
-}
-
-#stills {
-    position: relative;
-    padding-left: 100px;
-}
-
-#moving {
-    position: relative;
-    padding-left: 80px;
-    color: #4c3ccc;
-}
-
 #moving:hover {
     color: #2c3ba2;
-}
-
-#about {
-    position: relative;
-    padding-left: 80px;
-}
-
-#ig-icon {
-    position: relative;
-    padding-left: 45px;
 }
 
 /* GRID */
