@@ -7,7 +7,7 @@ const howManyVids2 = adverts.length;
 console.log("There are " + howManyVids + " musicvids");
 console.log("There are " + howManyVids2 + " adverts");
 
-// clone 1st grid-item node (with children) x howManyVids and append all clones to grid 
+// clone 1st grid-item node (with children) x howManyVids and append all clones to grid
 
 for (i = 1; i < howManyVids; i++) {
     let clone = gridItem.cloneNode(true);
@@ -32,7 +32,7 @@ const gridItems2 = document.querySelectorAll(`.grid-item2`);
 gridVids.forEach(addSrcAndTitle);
 function addSrcAndTitle(item, index) {
     gridVids[index].src = "vids/" + musicvids[index] + ".mp4";
-    gridVids[index].poster = "poster/" + musicvids[index] + ".jpg";
+    gridVids[index].poster = "poster/z_webp/" + musicvids[index] + ".webp";
     overlays[index].innerHTML = musicvids[index];
 };
 
@@ -43,7 +43,7 @@ function addSrcAndTitle2(item, index) {
     overlays2[index].innerHTML = adverts[index];
 };
 
-// Hover 
+// Hover
 
 overlays.forEach(playOnHover);
 function playOnHover(item, index) {
